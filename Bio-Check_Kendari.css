@@ -9,7 +9,7 @@ body {
     position: relative;
     
     background: linear-gradient(135deg, rgba(66, 97, 143, 0.85), rgba(25, 135, 84, 0.85)), 
-                url('https://media.indozone.id/crop/0x0:0x0/images/2026/01/28/1769569997_69797ecd6be1a_tugu-di-kota-kendari.jpg') repeat-x center center;
+                url('background.jpg') repeat-x center center;
     
     
     background-size: auto 150%; 
