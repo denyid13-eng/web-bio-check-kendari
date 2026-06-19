@@ -1,0 +1,150 @@
+/* GLOBAL STYLE */
+body {
+    background-color: #f4f7fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    
+    background: linear-gradient(135deg, rgba(66, 97, 143, 0.85), rgba(25, 135, 84, 0.85)), 
+                url('https://media.indozone.id/crop/0x0:0x0/images/2026/01/28/1769569997_69797ecd6be1a_tugu-di-kota-kendari.jpg') repeat-x center center;
+    
+    
+    background-size: auto 150%; 
+    
+    color: white;
+    padding: 320px 80px;
+    border-radius: 0 0 30px 30px;
+    text-align: center;
+
+    animation: bergeser 40s linear infinite;
+}
+
+/* Efek teks tajam */
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes bergeser {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 100% center; 
+    }
+}
+.btn-light{
+    font-weight: bold;
+}
+
+/* CARD STYLE */
+.card {
+    border: none;
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+/*FORM STYLE*/
+
+.form-label {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.form-select {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* BUTTON STYLE */
+.btn-success {
+    border-radius: 10px;
+    font-weight: bold;
+
+html {
+    scroll-behavior: smooth;
+}
+}
+
+/* RESULT BOX */
+.result-box {
+    font-size: 60px;
+    font-weight: bold;
+    color: #198754;
+    margin-top: 10px;
+}
+
+/* ALERT STYLE */
+.alert {
+    border-radius: 12px;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    background: #212529;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background-color: #212529;
+    color: white;
+    transition: 0.3s;
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+.sidebar.active {
+    right: 100%;
+}
+.section-title {
+    color: #777;
+    font-size: 0.75rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10 px 0;
+    text-decoration: none;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,5);
+}
